@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #d1{
+            width: 100px;
+            height: 100px;
+            background-color: salmon;
+            position: absolute;
+            animation:moves 5s infinite;
+/*                              动态效果里无限循环*/
+        }
+        @keyframes moves{
+            0%{
+                margin-top: 0px;
+            }
+            30%{
+                margin-top: 400px;
+            }
+            60%{
+                margin-top: 100px;
+            }
+            100%{
+                margin-top: 0px;
+            }
+        }
+        #q2{
+            width: 200px;
+            height: 200px;
+            background-color: cornflowerblue;
+            animation:xuan 1s infinite;
+            position: absolute;
+            animation-timing-function:linear;
+/*    给动画添加属性的  匀速    功能       轴距*/
+            transform-origin:100px 100px;
+        }
+        @keyframes  xuan{
+            to{
+                transform:rotatey(360deg)
+                /* deg  是度 前面加一个-号就可以逆时针旋转*/
+               /* 按那个轴旋转。 rotate是轴 后面的Y可换成Z或X */
+            }
+        }
+    </style>
+</head>
+<body>
+<div id="d1"></div>
+<p>
+    动画@keyframes
+      使用@keyframes规则，可以创建动画， 通过css
+    的逐步改变完成动画效果。
+      在动画过程中，你可以多次更改css样式的设定
+    指定变化时，使用%或者关键字   from    to
+    动画开始 0%       结束 100%
+    相当于开始from |  to相当于结束
+</p>
+<div id="q2"></div>
+</body>
+</html>

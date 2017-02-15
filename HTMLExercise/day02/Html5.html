@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Html5的表单元素</title>
+</head>
+<body>
+<h1 align="center">HTML5的输入标记</h1>
+<form>
+    <table border="1" cellpadding="10" cellspacing="0" align="center" width="960">
+        <tr align="center">
+            <td width="15%">名称</td>
+            <td width="20%">控件</td>
+            <td align="left">描述</td>
+        </tr>
+        <tr align="center">
+            <td>Email类型</td>
+            <td><input type="email"/> </td>
+            <td align="left">要求用户输入Email类型的数据，提交数据时会自动验证格式是否正确</td>
+        </tr>
+        <tr align="center">
+            <td>Search类型</td>
+            <td><input type="search"> </td>
+            <td align="left">搜索文本框，允许数据被快速删除</td>
+        </tr>
+
+        <tr align="center">
+            <td>number类型</td>
+            <td align="left"><input type="number" min="18" max="60" step="0.1" value="39" id="number"/></td>
+            <td align="left">只能接受数字，min最小值，max最大值，step步长，value默认值</td>
+        </tr>
+        <tr align="center">
+            <td>Range滑块</td>
+            <td><input type="range" min="18" max="60" value="39" step="0.1" onchange=""> </td>
+            <td align="left">min最小值，max最大值，value默认值，step步长</td>
+        </tr>
+        <tr align="center">
+            <td>color类型</td>
+            <td><input type="color"/> </td>
+            <td align="left">弹出一个调色板供用户选取颜色</td>
+        </tr>
+        <tr align="center">
+            <td>Date类型</td>
+            <td><input type="date"/> </td>
+            <td align="left">弹出日历框供用户选择、输入、快速清除日期等操作</td>
+        </tr>
+        <tr align="center">
+            <td>Week类型</td>
+            <td><input type="week"/> </td>
+            <td align="left">弹出一个日历框供用户选择，用户可以在该日历中选择到某一周的时间</td>
+        </tr>
+        <tr align="center">
+            <td>Month类型</td>
+            <td><input type="month"/> </td>
+            <td align="left">弹出一个日历框供用户选择，用户可以在该日历中选择某一月的时间</td>
+        </tr>
+        <tr align="center">
+            <td>placeholder属性</td>
+            <td><input type="text" placeholder="手机号/邮箱名/用户名"/> </td>
+            <td align="left">默认显示一段提示信息在该元素上</td>
+        </tr>
+        <tr align="center">
+            <td>required属性</td>
+            <td><input type="text" required="required"> </td>
+            <td align="left">必填文本框，否则无法提交表单</td>
+        </tr>
+        <tr align="center">
+            <td>autofocus属性</td>
+            <td><input type="text" autofocus/> </td>
+            <td align="left">自动获取焦点</td>
+        </tr>
+        <tr align="center">
+            <td colspan="3"><input type="submit" value="Submit"> </td>
+        </tr>
+
+    </table>
+</form>
+<div align="center">
+    <video src="../images/珍惜人生.mp4" width="400px" height="360px" controls autoplay loop/>
+
+</div>
+<div align="center">
+    <audio src="../images/东风破.mp3" controls loop autoplay/>
+</div>
+</body>
+</html>

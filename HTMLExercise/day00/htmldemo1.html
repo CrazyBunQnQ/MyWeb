@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+ <!--注释标签
+   作用： 注释一些文档中的说明信息
+      给程序员看的
+   注释标签中的内容，浏览器是不解析的
+ -->
+  <!--首行代码：当前文档的类型 是 html-->
+<html>
+<!--html标签是文档中的根标签，有且只有一对-->
+<head lang="en">
+    <!--head标签中 说明文档的一些说明信息  -->
+    <meta charset="UTF-8">
+    <!--字符编码：utf-8-->
+    <title>这是我的第一个网页</title>
+    <!--title标签：当浏览器打开当前页面时，页面标签所显示的内容-->
+</head>
+<body>
+标题标签。<br/>
+标题标签！
+<!--h1-h6从大到小  自带的效果：  字体加粗、自动换行-->
+<h1>标题标签1</h1>
+<h2>标题标签2</h2>
+<h6>标题标签6</h6>
+<br/><br/>
+<h2>特殊符号：</h2>
+版权标记： &copy;<br/>
+商标标记：&reg;  <br/>
+大于号：&gt;   小于号：&lt;<br/>
+引号：&quot;<br/>
+空&nbsp;&nbsp;格：
+
+<h2>水平线标签</h2>
+<!--
+ hr: 水平线标签
+ 属性：   width: 宽度  可以是 百分比%  也可以是像素值 px
+ size: 水平线的 垂直高度
+ color: 颜色
+  align： 位置  left(居左) center(居中) right(居右)
+ -->
+<hr />
+<hr width="50%"/>
+<hr width="700px"/>
+<hr width="60%" size="10px"/>
+<hr width="70%" size="20px" color="red"/>
+<hr width="40%" size="10px" color="blue" align="left"/>
+<hr width="50%" size="15px" color="yellow" align="right"/>
+<hr width="60%" size="25px" color="pink" align="center"/>
+
+<h2>文字标记</h2>
+<!--
+ s标签作用：对包裹着的文字 加 删除线
+ b标签作用： 对包裹着的文字 加粗
+ i标签作用： 对包裹着的文字 斜体显示
+ u标签作用: 对包裹着的文字 加下划线
+ -->
+<s>中软</s><b>开创</b>"<i>软件开发训练营</i>"<u>欢迎您</u>！！！
+
+<h2>段落标签</h2>
+<p>&nbsp;&nbsp;段落。。<br/>段落2.。。</p>
+
+<br/><br/>
+<h2>标签的嵌套</h2>
+<!--
+  <a></a>  <b></b>
+  正确的嵌套：  <a><b></b></a>    <b><a></a></b>
+  错误的嵌套：  <a><b></a> </b>    <b><></b> </a>
+ -->
+例：<p><u>剑圣说：</u> 我的剑就是你的剑...</p>
+<br/><br/>
+
+<h2>图片标签</h2>
+<!--
+ img:图片标签
+ 属性：  src : 图片的路径
+  alt:无法显示图片的时候，浏览器替代的文本
+  width: 宽度     height: 高度
+ -->
+<img src="../image/zjl.jpg" alt="周杰伦" width="192" height="274" />
+
+<h2>背景音乐标签</h2>
+<!--
+ bgsound: 背景音乐标签
+ src: 音乐的路径   loop:循环  loop="n"  n：播放的次数
+                  loop="-1"  -1: 无限循环
+ 兼容：只有IE系列的浏览器兼容
+ -->
+<bgsound src="../image/东风破.mp3" loop="-1"></bgsound>
+
+<h2>文字标签</h2>
+<!--
+  font: 文字标签      size="" 字号 大小
+  color:字体的颜色    face=""  字体
+ -->
+<font size="7" color="#ea41ff" face="微软雅黑">
+    窗前明月光，疑是地上霜
+</font>
+
+<h1 align="center">网页中滚动效果的应用</h1>
+
+<marquee>
+    <img src="../image/zjl.jpg" alt="周杰伦"
+                    width="192" height="274" />
+</marquee>
+<!--
+ marquee: 网页滚动效果
+   属性： bgcolor: 背景颜色
+   direction="right"
+       :滚动的方向  有四个值 up(向上) down(向下) left(默认) right(右)
+ -->
+<marquee bgcolor="#74FFFC">
+    <font size="5" color="#ff6b57">
+        靠山山会倒，靠水水会流，还不如靠自己！！！
+    </font>
+</marquee>
+
+<marquee bgcolor="pink" direction="right">
+    <font size="7" color="#ff110a">
+        一个成功的男人后面一定站着个多事的女人！！！
+    </font>
+</marquee>
+<!--
+ behavior: 滚动的方式    scroll（一圈一圈的滚动）
+                        slide (滚动一次)
+                        alternate(来回滚动)
+scrollamount: 滚动的速度
+ -->
+<marquee bgcolor="#fffbaf" behavior="alternate" scrollamount="10">
+    <font size="5" color="#2c17ff">
+        你不勇敢，没人替你坚强！！！
+    </font>
+</marquee>
+
+
+
+
+
+
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+</body>
+
+</html>

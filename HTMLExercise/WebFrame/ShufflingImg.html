@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>轮播图</title>
+    <!--<script src="js/scrollImages.js"/>-->
+    <link href="css/style.css" rel="stylesheet"/>
+    <script type="text/javascript">
+        var i = 1;
+        function autoChangeImage(i) {
+            setTimeout("changeImage(i++);", 1500);
+//            setTimeout("back(i);", 1000);
+            setTimeout("autoChangeImage(i=(i%6));", 1500);
+        }
+
+        function changeImage(idNum) {
+            // document.getelementsById 根据id获取控件
+            document.getElementById("radio" + idNum).checked = "checked";
+            // switch (idNum){
+            //     case 0:
+            document.getElementById("scrollImage").style.backgroundImage = "url(images/scroll_" + idNum + ".jpg)";
+            // }
+        }
+    </script>
+</head>
+<body onload="autoChangeImage(0)">
+<div align="center"><img src="images/scroll_top.gif" width="540"/></div>
+<!--<div align="center">-->
+    <!--<div id="scrollImage" class="imageShow"></div>-->
+<!--</div>-->
+<div align="center">
+    <div id="scrollImage">
+        <input type="radio" id="radio0" name="lit" class="radio" value="0" onclick="changeImage(0)" checked/>
+        <input type="radio" id="radio1" name="lit" class="radio" value="0" onclick="changeImage(1)"/>
+        <input type="radio" id="radio2" name="lit" class="radio" value="0" onclick="changeImage(2)"/>
+        <input type="radio" id="radio3" name="lit" class="radio" value="0" onclick="changeImage(3)"/>
+        <input type="radio" id="radio4" name="lit" class="radio" value="0" onclick="changeImage(4)"/>
+        <input type="radio" id="radio5" name="lit" class="radio" value="0" onclick="changeImage(5)"/>
+    </div>
+</div>
+
+<!--<div align="center"><img src="images/scroll_1.jpg"/></div>-->
+<div align="center"><img src="images/scroll_end.gif"/></div>
+</body>
+</html>

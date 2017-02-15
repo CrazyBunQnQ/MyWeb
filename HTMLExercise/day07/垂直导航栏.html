@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #d1 {
+            width: 800px;
+            /**font-weight 字体加粗*/
+            font-weight: bold;
+        }
+
+        ul li {
+            /*list-style-type:*/
+            /*列表样式类型：circle （小圆圈）;*/
+            /*square(正方形 小方块)*/
+            /*none(无列表项符号)*/
+            list-style-type: none;
+            background-color: lavender;
+            /*文本位置*/
+            text-align: center;
+            /*行高*/
+            line-height: 60px;
+            /*行宽*/
+            width: 100px;
+            /*水平显示（默认竖直排列）*/
+            float: left;
+        }
+
+        ul li a {
+            /*想文本添加修饰*/
+            text-decoration: none;
+        }
+
+        /*光标移上去的事件*/
+        a:hover {
+            background-color: red;
+            /*把链接显示为块状*/
+            display: block;
+            /*添加下划线*/
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<div id="d1">
+    <!--
+     ul标签  无序列表标签
+     li:列表标签 （内容可以是 段落，图片，文本...）
+     -->
+    <ul>
+        <li><a href="#">首页</a></li>
+        <li><a href="#">公司简介</a></li>
+        <li><a href="#">财务模块</a></li>
+        <li><a href="#">客户模块</a></li>
+        <li><a href="#">联系我们</a></li>
+    </ul>
+</div>
+</body>
+</html>

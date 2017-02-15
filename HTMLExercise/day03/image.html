@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+    <meta charset="UTF-8">
+    <title>图画</title>
+    <style>
+        #sky {
+            position: absolute;
+            width: 100%;
+            height: 370px;
+            background-color: #0080ff;
+        }
+
+        #grass {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            margin-top: 370px;
+            background-color: #40CC00;
+        }
+
+        #sun{
+            position: absolute;
+            width: 400px;
+            height:400px;
+            background-color: #fff714;
+            border-radius: 100%;
+            /*可以分别设置两个对角或者四个角的弧度值*/
+            /*border-radius: 100px 10px 50px 30px;*/
+            margin-top: 100px;
+            margin-left: 1100px;
+        }
+
+        #tree1 {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            margin-top: 550px;
+            margin-left: 920px;
+        }
+
+        #tree1_a {
+            margin-top: 0px;
+            width: 0px;
+            height: 0px;
+            border-top: 0px;
+            border-bottom: 50px solid #406800;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+        }
+
+        #tree1_b {
+            margin-top: -20px;
+            width: 0px;
+            height: 0px;
+            border-top: 0px;
+            border-bottom: 50px solid #406800;
+            border-left: 60px solid transparent;
+            border-right: 60px solid transparent;
+        }
+
+        #tree1_c {
+            margin-top: -20px;
+            width: 0px;
+            height: 0px;
+            border-top: 0px;
+            border-bottom: 50px solid #406800;
+            border-left: 75px solid transparent;
+            border-right: 75px solid transparent;
+        }
+
+        #tree1_d {
+            margin-top: 0px;
+            width: 0px;
+            height: 40px;
+            border-top: 0px;
+            border-bottom: 0px;
+            border-left: 10px solid brown;
+            border-right: 10px solid brown;
+        }
+
+        #tree2 {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            margin-top: 450px;
+            margin-left: 400px;
+        }
+
+        #tree2_a {
+            margin-top: 0px;
+            width: 0px;
+            height: 0px;
+            border-top: 0px;
+            border-bottom: 50px solid green;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+        }
+
+        #tree2_b {
+            margin-top: -20px;
+            width: 0px;
+            height: 0px;
+            border-top: 0px;
+            border-bottom: 50px solid green;
+            border-left: 60px solid transparent;
+            border-right: 60px solid transparent;
+        }
+
+        #tree2_c {
+            margin-top: -20px;
+            width: 0px;
+            height: 0px;
+            border-top: 0px;
+            border-bottom: 50px solid green;
+            border-left: 75px solid transparent;
+            border-right: 75px solid transparent;
+        }
+
+        #tree2_d {
+            margin-top: 0px;
+            width: 0px;
+            height: 40px;
+            border-top: 0px;
+            border-bottom: 0px;
+            border-left: 10px solid brown;
+            border-right: 10px solid brown;
+        }
+
+        #tree3 {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            margin-top: 340px;
+            margin-left: 1240px;
+        }
+
+        #tree3_a {
+            margin-top: 0px;
+            width: 0px;
+            height: 0px;
+            border-top: 0px;
+            border-bottom: 50px solid #40AA00;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+        }
+
+        #tree3_b {
+            margin-top: -20px;
+            width: 0px;
+            height: 0px;
+            border-top: 0px;
+            border-bottom: 50px solid #40AA00;
+            border-left: 60px solid transparent;
+            border-right: 60px solid transparent;
+        }
+
+        #tree3_c {
+            margin-top: -20px;
+            width: 0px;
+            height: 0px;
+            border-top: 0px;
+            border-bottom: 50px solid #40AA00;
+            border-left: 75px solid transparent;
+            border-right: 75px solid transparent;
+        }
+
+        #tree3_d {
+            margin-top: 0px;
+            width: 0px;
+            height: 40px;
+            border-top: 0px;
+            border-bottom: 0px;
+            border-left: 10px solid brown;
+            border-right: 10px solid brown;
+        }
+        
+        #tree4 {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            margin-top: 260px;
+            margin-left: 430px;
+        }
+
+        #tree4_a {
+            margin-top: 0px;
+            width: 0px;
+            height: 0px;
+            border-top: 0px;
+            border-bottom: 50px solid #40AA00;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+        }
+
+        #tree4_b {
+            margin-top: -20px;
+            width: 0px;
+            height: 0px;
+            border-top: 0px;
+            border-bottom: 50px solid #40AA00;
+            border-left: 60px solid transparent;
+            border-right: 60px solid transparent;
+        }
+
+        #tree4_c {
+            margin-top: -20px;
+            width: 0px;
+            height: 0px;
+            border-top: 0px;
+            border-bottom: 50px solid #40AA00;
+            border-left: 75px solid transparent;
+            border-right: 75px solid transparent;
+        }
+
+        #tree4_d {
+            margin-top: 0px;
+            width: 0px;
+            height: 40px;
+            border-top: 0px;
+            border-bottom: 0px;
+            border-left: 10px solid brown;
+            border-right: 10px solid brown;
+        }
+
+        #tree5 {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            margin-top: 400px;
+            margin-left: 620px;
+        }
+
+        #tree5_a {
+            margin-top: 0px;
+            width: 0px;
+            height: 0px;
+            border-top: 0px;
+            border-bottom: 50px solid #40AA00;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+        }
+
+        #tree5_b {
+            margin-top: -20px;
+            width: 0px;
+            height: 0px;
+            border-top: 0px;
+            border-bottom: 50px solid #40AA00;
+            border-left: 60px solid transparent;
+            border-right: 60px solid transparent;
+        }
+
+        #tree5_c {
+            margin-top: -20px;
+            width: 0px;
+            height: 0px;
+            border-top: 0px;
+            border-bottom: 50px solid #40AA00;
+            border-left: 75px solid transparent;
+            border-right: 75px solid transparent;
+        }
+
+        #tree5_d {
+            margin-top: 0px;
+            width: 0px;
+            height: 40px;
+            border-top: 0px;
+            border-bottom: 0px;
+            border-left: 10px solid brown;
+            border-right: 10px solid brown;
+        }
+
+        #tree6 {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            margin-top: 240px;
+            margin-left: 900px;
+        }
+
+        #tree6_a {
+            margin-top: 0px;
+            width: 0px;
+            height: 0px;
+            border-top: 0px;
+            border-bottom: 50px solid #40AA00;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+        }
+
+        #tree6_b {
+            margin-top: -20px;
+            width: 0px;
+            height: 0px;
+            border-top: 0px;
+            border-bottom: 50px solid #40AA00;
+            border-left: 60px solid transparent;
+            border-right: 60px solid transparent;
+        }
+
+        #tree6_c {
+            margin-top: -20px;
+            width: 0px;
+            height: 0px;
+            border-top: 0px;
+            border-bottom: 50px solid #40AA00;
+            border-left: 75px solid transparent;
+            border-right: 75px solid transparent;
+        }
+
+        #tree6_d {
+            margin-top: 0px;
+            width: 0px;
+            height: 40px;
+            border-top: 0px;
+            border-bottom: 0px;
+            border-left: 10px solid brown;
+            border-right: 10px solid brown;
+        }
+
+        #tree7 {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            margin-top: 390px;
+            margin-left: 1140px;
+        }
+
+        #tree7_a {
+            margin-top: 0px;
+            width: 0px;
+            height: 0px;
+            border-top: 0px;
+            border-bottom: 50px solid #40AA00;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+        }
+
+        #tree7_b {
+            margin-top: -20px;
+            width: 0px;
+            height: 0px;
+            border-top: 0px;
+            border-bottom: 50px solid #40AA00;
+            border-left: 60px solid transparent;
+            border-right: 60px solid transparent;
+        }
+
+        #tree7_c {
+            margin-top: -20px;
+            width: 0px;
+            height: 0px;
+            border-top: 0px;
+            border-bottom: 50px solid #40AA00;
+            border-left: 75px solid transparent;
+            border-right: 75px solid transparent;
+        }
+
+        #tree7_d {
+            margin-top: 0px;
+            width: 0px;
+            height: 40px;
+            border-top: 0px;
+            border-bottom: 0px;
+            border-left: 10px solid brown;
+            border-right: 10px solid brown;
+        }
+        
+        #house1 {
+            position: absolute;
+            width: auto;
+            height: auto;
+            margin-top: 150px;
+            margin-left: 500px;
+        }
+
+        #house1yancong {
+            position: absolute;
+            width: 30px;
+            height: 50px;
+            margin-top: 0px;
+            margin-left: 100px;
+            background-color: #444444;
+            border: 5px solid #000000;
+        }
+
+        #house1fangding1 {
+            position: absolute;
+            width: 0px;
+            height: 0px;
+            margin-top: 50px;
+            margin-left: 0px;
+            border-top: 0px;
+            border-bottom: 100px solid #CF883F;
+            border-left: 60px solid transparent;
+            border-right: 60px solid transparent;
+        }
+
+        #house1fangding2 {
+            position: absolute;
+            width: 134px;
+            height: 0px;
+            margin-top: 50px;
+            margin-left: 60px;
+            border-top: 100px solid #993333;
+            border-bottom: 0px;
+            border-left: 60px solid transparent;
+            border-right: 30px solid transparent;
+        }
+
+        #house1line1 {
+            position: absolute;
+            width: 1px;
+            height: 0px;
+            margin-top: 50px;
+            margin-left: 190px;
+            border-top: 0px;
+            border-bottom: 100px solid #000000;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+        }
+
+        #house1line2 {
+            position: absolute;
+            width: 1px;
+            height: 0px;
+            margin-top: 50px;
+            margin-left: 189px;
+            border-top: 0px;
+            border-bottom: 100px solid #993333;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+        }
+
+        #house1fangding3 {
+            position: absolute;
+            width: 0px;
+            height: 0px;
+            margin-top: 50px;
+            margin-left: 254px;
+            border-top: 0px;
+            border-bottom: 100px solid #CF883F;
+            border-left: 30px solid transparent;
+            border-right: 30px solid transparent;
+        }
+
+        #house1fangti1 {
+            position: absolute;
+            width: 80px;
+            height: 120px;
+            margin-top: 150px;
+            margin-left: 20px;
+            background-color: #ffffff;
+            border-top: 1px solid #000000;
+            border-bottom: 5px solid #000000;
+            border-left: 5px solid #000000;
+            border-right: 5px solid #000000;
+        }
+
+        #house1fangti2 {
+            position: absolute;
+            width: 109px;
+            height: 120px;
+            margin-top: 150px;
+            margin-left: 109px;
+            background-color: #dddddd;
+            border-top: 1px solid #000000;
+            border-bottom: 5px solid #000000;
+        }
+
+        #house1fangti3 {
+            position: absolute;
+            width: 30px;
+            height: 120px;
+            margin-top: 150px;
+            margin-left: 218px;
+            background-color: #ffffff;
+            border-top: 1px solid #000000;
+            border-bottom: 5px solid #000000;
+            border-left: 5px solid #888888;
+            border-right: 5px solid #000000;
+        }
+
+        #house1fangti4 {
+            position: absolute;
+            width: 45px;
+            height: 120px;
+            margin-top: 150px;
+            margin-left: 257px;
+            background-color: #dddddd;
+            border-top: 1px solid #000000;
+            border-bottom: 5px solid #000000;
+            border-right: 5px solid #000000;
+        }
+
+        #house1door {
+            position: absolute;
+            width: 40px;
+            height: 65px;
+            margin-top: 204px;
+            margin-left: 40px;
+            background-color: #993333;
+            border-top: 3px solid #000000;
+            border-bottom: 0px;
+            border-left: 3px solid #000000;
+            border-right: 3px solid #000000;
+        }
+
+        #house1taijie {
+            position: absolute;
+            width: auto;
+            height: auto;
+            margin-left: 30px;
+            margin-top: 272px;
+        }
+
+        #house1taijie1 {
+            width: 40px;
+            height: 10px;
+            background-color: #8F8F8F;
+            border-top: 3px solid #000000;
+            border-bottom: 0px;
+            border-left: 3px solid #000000;
+            border-right: 3px solid #000000;
+        }
+
+        #house1taijie2 {
+            width: 50px;
+            height: 10px;
+            background-color: #8F8F8F;
+            border-top: 3px solid #000000;
+            border-bottom: 0px;
+            border-left: 3px solid #000000;
+            border-right: 3px solid #000000;
+        }
+
+        #house1taijie3 {
+            width: 60px;
+            height: 10px;
+            background-color: #8F8F8F;
+            border-top: 3px solid #000000;
+            border-bottom: 0px;
+            border-left: 3px solid #000000;
+            border-right: 3px solid #000000;
+        }
+
+        #house2 {
+            position: absolute;
+            width: auto;
+            height: auto;
+            margin-top: 250px;
+            margin-left: 980px;
+        }
+
+        #house2yancong {
+            position: absolute;
+            width: 30px;
+            height: 50px;
+            margin-top: 0px;
+            margin-left: 100px;
+            background-color: #444444;
+            border: 5px solid #000000;
+        }
+
+        #house2fangding1 {
+            position: absolute;
+            width: 0px;
+            height: 0px;
+            margin-top: 50px;
+            margin-left: 0px;
+            border-top: 0px;
+            border-bottom: 100px solid #CF883F;
+            border-left: 60px solid transparent;
+            border-right: 60px solid transparent;
+        }
+
+        #house2fangding2 {
+            position: absolute;
+            width: 134px;
+            height: 0px;
+            margin-top: 50px;
+            margin-left: 60px;
+            border-top: 100px solid #993333;
+            border-bottom: 0px;
+            border-left: 60px solid transparent;
+            border-right: 30px solid transparent;
+        }
+
+        #house2line1 {
+            position: absolute;
+            width: 1px;
+            height: 0px;
+            margin-top: 50px;
+            margin-left: 190px;
+            border-top: 0px;
+            border-bottom: 100px solid #000000;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+        }
+
+        #house2line2 {
+            position: absolute;
+            width: 1px;
+            height: 0px;
+            margin-top: 50px;
+            margin-left: 189px;
+            border-top: 0px;
+            border-bottom: 100px solid #993333;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+        }
+
+        #house2fangding3 {
+            position: absolute;
+            width: 0px;
+            height: 0px;
+            margin-top: 50px;
+            margin-left: 254px;
+            border-top: 0px;
+            border-bottom: 100px solid #CF883F;
+            border-left: 30px solid transparent;
+            border-right: 30px solid transparent;
+        }
+
+        #house2fangti1 {
+            position: absolute;
+            width: 80px;
+            height: 120px;
+            margin-top: 150px;
+            margin-left: 20px;
+            background-color: #ffffff;
+            border-top: 1px solid #000000;
+            border-bottom: 5px solid #000000;
+            border-left: 5px solid #000000;
+            border-right: 5px solid #000000;
+        }
+
+        #house2fangti2 {
+            position: absolute;
+            width: 109px;
+            height: 120px;
+            margin-top: 150px;
+            margin-left: 109px;
+            background-color: #dddddd;
+            border-top: 1px solid #000000;
+            border-bottom: 5px solid #000000;
+        }
+
+        #house2fangti3 {
+            position: absolute;
+            width: 30px;
+            height: 120px;
+            margin-top: 150px;
+            margin-left: 218px;
+            background-color: #ffffff;
+            border-top: 1px solid #000000;
+            border-bottom: 5px solid #000000;
+            border-left: 5px solid #888888;
+            border-right: 5px solid #000000;
+        }
+
+        #house2fangti4 {
+            position: absolute;
+            width: 45px;
+            height: 120px;
+            margin-top: 150px;
+            margin-left: 257px;
+            background-color: #dddddd;
+            border-top: 1px solid #000000;
+            border-bottom: 5px solid #000000;
+            border-right: 5px solid #000000;
+        }
+
+        #house2door {
+            position: absolute;
+            width: 40px;
+            height: 65px;
+            margin-top: 204px;
+            margin-left: 40px;
+            background-color: #993333;
+            border-top: 3px solid #000000;
+            border-bottom: 0px;
+            border-left: 3px solid #000000;
+            border-right: 3px solid #000000;
+        }
+
+        #house2taijie {
+            position: absolute;
+            width: auto;
+            height: auto;
+            margin-left: 30px;
+            margin-top: 272px;
+        }
+
+        #house2taijie1 {
+            width: 40px;
+            height: 10px;
+            background-color: #8F8F8F;
+            border-top: 3px solid #000000;
+            border-bottom: 0px;
+            border-left: 3px solid #000000;
+            border-right: 3px solid #000000;
+        }
+
+        #house2taijie2 {
+            width: 50px;
+            height: 10px;
+            background-color: #8F8F8F;
+            border-top: 3px solid #000000;
+            border-bottom: 0px;
+            border-left: 3px solid #000000;
+            border-right: 3px solid #000000;
+        }
+
+        #house2taijie3 {
+            width: 60px;
+            height: 10px;
+            background-color: #8F8F8F;
+            border-top: 3px solid #000000;
+            border-bottom: 0px;
+            border-left: 3px solid #000000;
+            border-right: 3px solid #000000;
+        }
+
+        #house3 {
+            position: absolute;
+            width: auto;
+            height: auto;
+            margin-top: 350px;
+            margin-left: 700px;
+        }
+
+        #house3yancong {
+            position: absolute;
+            width: 30px;
+            height: 50px;
+            margin-top: 0px;
+            margin-left: 100px;
+            background-color: #444444;
+            border: 5px solid #000000;
+        }
+
+        #house3fangding1 {
+            position: absolute;
+            width: 0px;
+            height: 0px;
+            margin-top: 50px;
+            margin-left: 0px;
+            border-top: 0px;
+            border-bottom: 100px solid #CF883F;
+            border-left: 60px solid transparent;
+            border-right: 60px solid transparent;
+        }
+
+        #house3fangding2 {
+            position: absolute;
+            width: 134px;
+            height: 0px;
+            margin-top: 50px;
+            margin-left: 60px;
+            border-top: 100px solid #993333;
+            border-bottom: 0px;
+            border-left: 60px solid transparent;
+            border-right: 30px solid transparent;
+        }
+
+        #house3line1 {
+            position: absolute;
+            width: 1px;
+            height: 0px;
+            margin-top: 50px;
+            margin-left: 190px;
+            border-top: 0px;
+            border-bottom: 100px solid #000000;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+        }
+
+        #house3line2 {
+            position: absolute;
+            width: 1px;
+            height: 0px;
+            margin-top: 50px;
+            margin-left: 189px;
+            border-top: 0px;
+            border-bottom: 100px solid #993333;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+        }
+
+        #house3fangding3 {
+            position: absolute;
+            width: 0px;
+            height: 0px;
+            margin-top: 50px;
+            margin-left: 254px;
+            border-top: 0px;
+            border-bottom: 100px solid #CF883F;
+            border-left: 30px solid transparent;
+            border-right: 30px solid transparent;
+        }
+
+        #house3fangti1 {
+            position: absolute;
+            width: 80px;
+            height: 120px;
+            margin-top: 150px;
+            margin-left: 20px;
+            background-color: #ffffff;
+            border-top: 1px solid #000000;
+            border-bottom: 5px solid #000000;
+            border-left: 5px solid #000000;
+            border-right: 5px solid #000000;
+        }
+
+        #house3fangti2 {
+            position: absolute;
+            width: 109px;
+            height: 120px;
+            margin-top: 150px;
+            margin-left: 109px;
+            background-color: #dddddd;
+            border-top: 1px solid #000000;
+            border-bottom: 5px solid #000000;
+        }
+
+        #house3fangti3 {
+            position: absolute;
+            width: 30px;
+            height: 120px;
+            margin-top: 150px;
+            margin-left: 218px;
+            background-color: #ffffff;
+            border-top: 1px solid #000000;
+            border-bottom: 5px solid #000000;
+            border-left: 5px solid #888888;
+            border-right: 5px solid #000000;
+        }
+
+        #house3fangti4 {
+            position: absolute;
+            width: 45px;
+            height: 120px;
+            margin-top: 150px;
+            margin-left: 257px;
+            background-color: #dddddd;
+            border-top: 1px solid #000000;
+            border-bottom: 5px solid #000000;
+            border-right: 5px solid #000000;
+        }
+
+        #house3door {
+            position: absolute;
+            width: 40px;
+            height: 65px;
+            margin-top: 204px;
+            margin-left: 40px;
+            background-color: #993333;
+            border-top: 3px solid #000000;
+            border-bottom: 0px;
+            border-left: 3px solid #000000;
+            border-right: 3px solid #000000;
+        }
+
+        #house3taijie {
+            position: absolute;
+            width: auto;
+            height: auto;
+            margin-left: 30px;
+            margin-top: 272px;
+        }
+
+        #house3taijie1 {
+            width: 40px;
+            height: 10px;
+            background-color: #8F8F8F;
+            border-top: 3px solid #000000;
+            border-bottom: 0px;
+            border-left: 3px solid #000000;
+            border-right: 3px solid #000000;
+        }
+
+        #house3taijie2 {
+            width: 50px;
+            height: 10px;
+            background-color: #8F8F8F;
+            border-top: 3px solid #000000;
+            border-bottom: 0px;
+            border-left: 3px solid #000000;
+            border-right: 3px solid #000000;
+        }
+
+        #house3taijie3 {
+            width: 60px;
+            height: 10px;
+            background-color: #8F8F8F;
+            border-top: 3px solid #000000;
+            border-bottom: 0px;
+            border-left: 3px solid #000000;
+            border-right: 3px solid #000000;
+        }
+
+        #tizi {
+            position: absolute;
+            width: 40px;
+            height: auto;
+            margin-left: 650px;
+            margin-top: 285px;
+        }
+
+        #tiziUp {
+            position: absolute;
+            width: 40px;
+            height: 25px;
+            margin-top: 20px;
+            border: 8px solid #CF973F;
+        }
+
+        #tiziDown {
+            position: absolute;
+            width: 40px;
+            height: 25px;
+            margin-top: 90px;
+            border: 8px solid #CF973F;
+        }
+
+        #tiziLeft {
+            position: absolute;
+            width: 8px;
+            height: 150px;
+            margin-top: 0px;
+            background-color: #CF973F;
+        }
+
+        #tiziRight {
+            position: absolute;
+            width: 8px;
+            height: 150px;
+            margin-top: 0px;
+            margin-left: 47px;
+            background-color: #CF973F;
+        }
+    </style>
+</head>
+<body>
+<div id="sky"></div>
+<div id="sun"></div>
+<div id="grass"></div>
+
+<div id="tree2">
+    <div align="center">
+        <div id="tree2_a"></div>
+    </div>
+    <div align="center">
+        <div id="tree2_b"></div>
+    </div>
+    <div align="center">
+        <div id="tree2_c"></div>
+    </div>
+    <div align="center">
+        <div id="tree2_d"></div>
+    </div>
+</div>
+
+<div id="tree3">
+    <div align="center">
+        <div id="tree3_a"></div>
+    </div>
+    <div align="center">
+        <div id="tree3_b"></div>
+    </div>
+    <div align="center">
+        <div id="tree3_c"></div>
+    </div>
+    <div align="center">
+        <div id="tree3_d"></div>
+    </div>
+</div>
+
+<div id="tree4">
+    <div align="center">
+        <div id="tree4_a"></div>
+    </div>
+    <div align="center">
+        <div id="tree4_b"></div>
+    </div>
+    <div align="center">
+        <div id="tree4_c"></div>
+    </div>
+    <div align="center">
+        <div id="tree4_d"></div>
+    </div>
+</div>
+
+<div id="house1">
+    <div id="house1yancong"></div>
+    <div id="house1fangding1"></div>
+    <div id="house1fangding2"></div>
+    <div id="house1line1"></div>
+    <div id="house1line2"></div>
+    <!--<v:line strokecolor="black" strokeweight="1px" from="35px,220px" to="50px,320px"/>-->
+    <div id="house1fangding3"></div>
+    <div id="house1fangti1"></div>
+    <div id="house1fangti2"></div>
+    <div id="house1fangti3"></div>
+    <div id="house1fangti4"></div>
+    <div id="house1door"></div>
+    <div id="house1taijie">
+        <div align="center">
+            <div id="house1taijie1"></div>
+        </div>
+        <div align="center">
+            <div id="house1taijie2"></div>
+        </div>
+        <div align="center">
+            <div id="house1taijie3"></div>
+        </div>
+    </div>
+</div>
+<div id="tizi">
+    <div align="center">
+        <div id="tiziUp"></div>
+    </div>
+    <div align="center">
+        <div id="tiziDown"></div>
+    </div>
+    <div id="tiziLeft"></div>
+    <div id="tiziRight"></div>
+</div>
+
+<div id="tree5">
+    <div align="center">
+        <div id="tree5_a"></div>
+    </div>
+    <div align="center">
+        <div id="tree5_b"></div>
+    </div>
+    <div align="center">
+        <div id="tree5_c"></div>
+    </div>
+    <div align="center">
+        <div id="tree5_d"></div>
+    </div>
+</div>
+
+<div id="tree6">
+    <div align="center">
+        <div id="tree6_a"></div>
+    </div>
+    <div align="center">
+        <div id="tree6_b"></div>
+    </div>
+    <div align="center">
+        <div id="tree6_c"></div>
+    </div>
+    <div align="center">
+        <div id="tree6_d"></div>
+    </div>
+</div>
+
+<div id="house2">
+    <div id="house2yancong"></div>
+    <div id="house2fangding1"></div>
+    <div id="house2fangding2"></div>
+    <div id="house2line1"></div>
+    <div id="house2line2"></div>
+    <!--<v:line strokecolor="black" strokeweight="1px" from="35px,220px" to="50px,320px"/>-->
+    <div id="house2fangding3"></div>
+    <div id="house2fangti1"></div>
+    <div id="house2fangti2"></div>
+    <div id="house2fangti3"></div>
+    <div id="house2fangti4"></div>
+    <div id="house2door"></div>
+    <div id="house2taijie">
+        <div align="center">
+            <div id="house2taijie1"></div>
+        </div>
+        <div align="center">
+            <div id="house2taijie2"></div>
+        </div>
+        <div align="center">
+            <div id="house2taijie3"></div>
+        </div>
+    </div>
+</div>
+
+<div id="tree7">
+    <div align="center">
+        <div id="tree7_a"></div>
+    </div>
+    <div align="center">
+        <div id="tree7_b"></div>
+    </div>
+    <div align="center">
+        <div id="tree7_c"></div>
+    </div>
+    <div align="center">
+        <div id="tree7_d"></div>
+    </div>
+</div>
+
+<div id="house3">
+    <div id="house3yancong"></div>
+    <div id="house3fangding1"></div>
+    <div id="house3fangding2"></div>
+    <div id="house3line1"></div>
+    <div id="house3line2"></div>
+    <!--<v:line strokecolor="black" strokeweight="1px" from="35px,220px" to="50px,320px"/>-->
+    <div id="house3fangding3"></div>
+    <div id="house3fangti1"></div>
+    <div id="house3fangti2"></div>
+    <div id="house3fangti3"></div>
+    <div id="house3fangti4"></div>
+    <div id="house3door"></div>
+    <div id="house3taijie">
+        <div align="center">
+            <div id="house3taijie1"></div>
+        </div>
+        <div align="center">
+            <div id="house3taijie2"></div>
+        </div>
+        <div align="center">
+            <div id="house3taijie3"></div>
+        </div>
+    </div>
+</div>
+<div id="tree1">
+    <div align="center">
+        <div id="tree1_a"></div>
+    </div>
+    <div align="center">
+        <div id="tree1_b"></div>
+    </div>
+    <div align="center">
+        <div id="tree1_c"></div>
+    </div>
+    <div align="center">
+        <div id="tree1_d"></div>
+    </div>
+</div>
+</body>
+</html>

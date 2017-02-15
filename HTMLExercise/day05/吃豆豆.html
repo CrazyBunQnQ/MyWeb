@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #q1{
+            width: 1116px;
+            height: 1106px;
+            background-image: url(../image/1.png );
+            position: absolute;
+        }
+        #w1{width: 50px;height: 50px;border-radius: 50%;background-color: yellow;position: absolute;}
+        #w2{
+            position: absolute;
+            width: 0px;height: 0px;
+            border-top: 5px solid transparent;
+            border-left:10px solid transparent;
+            border-right:15px solid white;
+            border-bottom: 10px solid transparent;
+            margin-top: 15px;
+            margin-left: 25px;
+
+        }#q2{
+                     position: absolute ;
+                     animation: moves 20s infinite;
+
+                 }
+        @keyframes moves {
+            0%{
+         margin-top: 370px;
+                margin-left: 0px;
+            }
+            5%{
+                margin-top: 370px;
+                margin-left: 50px;
+            }
+            10%{
+                margin-top: 50px;
+                margin-left: 50px;
+            }
+            15%{
+                margin-top: 50px;
+                margin-left: 280px;
+            }
+            20%{
+                margin-top: 150px;
+                margin-left: 280px;
+            }
+            25%{
+                margin-top: 150px;
+                margin-left: 170px;
+            }
+            30%{
+                margin-top: 680px;
+                margin-left:170px;
+            }
+            35%{
+                margin-top: 680px;
+                margin-left:280px;
+            }
+            40%{
+                margin-top: 260px;
+                margin-left: 280px;
+            }
+            45%{
+                margin-top: 260px;
+                margin-left: 800px;
+            }
+            50%{
+                margin-top: 160px;
+                margin-left: 800px;
+            }
+            55%{
+                margin-top: 160px;
+                margin-left: 900px;
+            }
+          60%{
+                margin-top: 60px;
+                margin-left: 900px;
+            }
+            65%{
+                margin-top: 60px;
+                margin-left: 1000px;
+            }
+            70%{
+                margin-top: 160px;
+                margin-left: 1000px;
+            }
+            90%{
+                margin-top: 160px;
+                margin-left: 1106px;
+                background-color: red;
+            }
+            100%{
+                    margin-top: 260px;
+                    margin-left: 400px;
+
+                }
+
+        }
+    </style>
+</head>
+<body>
+<div id="q1"></div>
+<div id="q2">
+    <div id="w1"></div>
+    <div id="w2"></div>
+</div>
+</body>
+</html>

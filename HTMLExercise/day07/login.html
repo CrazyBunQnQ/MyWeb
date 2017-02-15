@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign In</title>
+    <link href="css/style.css" rel="stylesheet"/>
+    <link href="css/loading_circle.css" rel="stylesheet"/>
+
+    <script type="text/javascript">
+        function check(form) {
+            if (document.forms.loginForm.uname.value == "") {//用户名是否为空
+                alert("请输入用户名！")
+                document.forms.loginForm.uname.focus();//获取焦点
+                return false;
+            } else if (document.forms.loginForm.upwd.value.length == 0){//密码的长度是否为0
+                alert("请输入密码！");
+                document.forms.loginForm.upwd.focus();
+                return false;
+            }
+        }
+
+        function goRegister() {
+
+        }
+    </script>
+</head>
+<body background="images/bg.jpg">
+<div class="preloader">
+    <div class="sk-spinner sk-spinner-wordpress">
+        <span class="sk-inner-circle"></span>
+    </div>
+</div>
+
+<div align="center" class="title">CrazyCompany</div>
+<div class="info" align="center">
+    <table border="0" cellspacing="0" cellpadding="0" width="100%">
+        <tr>
+            <td width="50%"></td>
+            <td>
+                <form action="index.html" name="loginForm" method="post">
+                    <table border="1" cellpadding="10" cellspacing="0">
+                        <tr>
+                            <td>UserName:</td>
+                            <td><input type="text" name="uname" placeholder="手机号/邮箱/用户名"/></td>
+                        </tr>
+                        <tr>
+                            <td>PassWord:</td>
+                            <td><input type="password" name="upwd"/></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="center">
+                                <input type="submit" id="login" onclick="return check(this)" value="Sign in"/>
+                                <input type="reset" value="Reset"/>
+                                <input type="button" value="register" value="Sign up" onclick="goRegister"/>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </td>
+        </tr>
+    </table>
+
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>

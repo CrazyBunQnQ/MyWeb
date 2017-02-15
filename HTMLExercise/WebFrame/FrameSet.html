@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>网页框架</title>
+</head>
+<!--框架不能放在body里-->
+<!--rows表示每行的高度，*号为自由高度
+frameborder是否显示边框
+framespacing框架之间的间距
+scrolling设置是否显示滚动条-->
+<frameset cols="*,960,*" frameborder="no" framespacing="0" style="height: 1000px;">
+    <frame src="about:blank"/>
+    <frameset rows="30,110,80,*" frameborder="no" framespacing="0" style="width: 960px">
+        <frame src="Top.html" name="Top.html" id="topFrame" scrolling="no"/>
+        <frame src="NavigationBar.html" name="NavigationBar.html" id="navigation" scrolling="no"/>
+        <frame src="AD.html" name="AD.html" id="ad" scrolling="no"/>
+        <frameset cols="200,*,260" frameborder="no" framespacing="0">
+            <frame src="Left.html" name="Left.html" id="left" scrolling="no"/>
+            <frameset rows="240,*" frameborder="no" framespacing="0">
+                <frame src="ShufflingImg.html" frameborder="no" framespacing="0" scrolling="no"/>
+                <frame src="NewBooks.html" frameborder="no" framespacing="0" scrolling="no"/>
+            </frameset>
+            <frame src="Right.html" name="Right.html" id="right" scrolling="no">
+        </frameset>
+    </frameset>
+    <frame src="about:blank"/>
+</frameset>
+<noframes>
+    <body>
+
+    </body>
+</noframes>
+</html>
