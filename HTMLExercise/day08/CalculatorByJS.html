@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/style.css" rel="stylesheet"/>
+    <script src="js/calculator.js"></script>
+    <script type="text/javascript">
+        function getText() {
+            var text = document.getElementById("name").value;
+            if (text == "" || text == null) {
+                alert("您并没有输入任何文字...");
+            } else {
+                alert("您输入姓名为" + text);
+            }
+        }
+
+        function rand() {
+            var randnum = 30 + Math.random() * (90 - 30);//30-90之间的随机数,公式：a + rand() * (b - a)，a到b之间的随机数
+            var quzheng = Math.floor(randnum);//取小数点之前的整数
+        }
+    </script>
+
+</head>
+<body>
+<!--姓名：<input type="text" id="name"/>-->
+<!--<input type="button" value="点击获取" onclick="getText()"/>-->
+<div align="center" style="margin-top: 100px;">
+    <table border="0" cellspacing="10" width="400" height="500">
+        <tr align="center">
+            <td colspan="5"><input id="screen" align="right" type="text" class="btn" value="0" readonly/></td>
+        </tr>
+        <tr align="center" style="height: 21%;">
+            <td width="20%"><input type="button" class="btn" onclick="setNum(7)" value="7"/></td>
+            <td width="20%"><input type="button" class="btn" onclick="setNum(8)" value="8"/></td>
+            <td width="20%"><input type="button" class="btn" onclick="setNum(9)" value="9"/></td>
+            <td width="20%"><input type="button" class="btn" onclick="yunsuan(4)" value="÷"/></td>
+            <td rowspan="2"><input type="button" class="btn" onclick="clean()" value="C"/></td>
+        </tr>
+        <tr align="center" style="height: 21%;">
+            <td><input type="button" class="btn" onclick="setNum(4)" value="4"/></td>
+            <td><input type="button" class="btn" onclick="setNum(5)" value="5"/></td>
+            <td><input type="button" class="btn" onclick="setNum(6)" value="6"/></td>
+            <td><input type="button" class="btn" onclick="yunsuan(3)" value="×"/></td>
+        </tr>
+        <tr align="center" style="height: 21%;">
+            <td><input type="button" class="btn" onclick="setNum(1)" value="1"/></td>
+            <td><input type="button" class="btn" onclick="setNum(2)" value="2"/></td>
+            <td><input type="button" class="btn" onclick="setNum(3)" value="3"/></td>
+            <td><input type="button" class="btn" onclick="yunsuan(2)" value="－"/></td>
+            <td rowspan="2"><input type="button" class="btn" onclick="dengyu()" value="＝"/></td>
+        </tr>
+        <tr align="center" style="height: 21%;">
+            <td colspan="2"><input type="button" class="btn" onclick="setNum(0)" value="0"/></td>
+            <td><input type="button" class="btn" onclick="setPoint()" value="."/></td>
+            <td><input type="button" class="btn" onclick="yunsuan(1)" value="＋"/></td>
+        </tr>
+    </table>
+    <div id="yunsuanfu" align="right"><label id="ope"></label></div>
+</div>
+</body>
+</html>
