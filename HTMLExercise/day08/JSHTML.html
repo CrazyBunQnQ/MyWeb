@@ -3,8 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        #yunsuanfu {
+            position: absolute;
+            margin-top: -489px;
+            margin-left: 375px;
+            color: #a31515;
+        }
+
+        .btn {
+            width: 100%;
+            height: 100%;
+            font-size: 36px;
+        }
+    </style>
+    <script type="text/javascript">
+        var num1 = 0;
+        var num2 = 0;
+        var hasOperator = false;//有无运算符
+        var operator = 0;//1：加法，2：减法，3：乘法，4：除法
+
+        function setNum(num) {
+            var screen = document.getElementById("show").value;
+            if (screen == "0") {
+                if (hasOperator) {//有运算符
+                    num1 = parseFloat(screen);
+                }
+                document.getElementById("show").value = num + "";
+            } else {
+                if (hasOperator) {//有运算符
+                    num1 = parseFloat(screen);
+                    document.getElementById("show").value = num + "";
+                } else {
+                    document.getElementById("show").value = screen + num;
+                }
+            }
+            hasOperator = false;
+        }
+
+        function setPoint() {
+            var screen = document.getElementById("show").value;
+            if (screen == "0") {
+                if (hasOperator) {
+                    num1 = parseFloat(screen);
+                }
+                document.getElementById("show").value = "0.";
+            } else {
+                if  (hasOperator) {
+                    num1 = parseFloat(screen);
+                    document.getElementById("show").value = "0.";
+                } else {
+                    document.getElementById("show").value = screen + ".";
+                }
+            }
+        }
+
+        function yunsuan(num) {
+            document.getElementById("ope").innerHTML = setOperator(num);
+            hasOperator = true;
+            num2 = parseFloat(document.getElementById("show").value);
+            var result = qiuzhi(num1, num2);
+            operator = num;
+            document.getElementById("show").value = result + "";
+        }
+
+        function setOperator(num) {
+            switch (num) {
+                case 1:
+                    return "＋";
+                case 2:
+                    return "－";
+                case 3:
+                    return "×";
+                case 4:
+                    return "÷";
+            }
+        }
+
+        function qiuzhi(a, b) {//求值
+            if (operator == 0) {
+                return parseFloat(document.getElementById("show").value);
+            }
+            switch (operator) {
+                case 1://+
+                    return a + b;
+                case 2://-
+                    return a - b;
+                case 3://x
+                    return a * b;
+                case 4:///
+                    return a / b;
+            }
+        }
+
+        function dengyu() {
+            if (operator == 0) {
+                return null;
+            }
+            num2 = num1;
+            num1 = parseFloat(document.getElementById("show").value);
+            var result = qiuzhi(num1, num2);
+            document.getElementById("show").value = result + "";
+        }
+
+        function clean() {
+            num1 = 0;
+            num2 = 0;
+            operator = 1;
+            document.getElementById("show").value = "0";
+            document.getElementById("ope").innerHTML = "";
+        }
+
+        function getText() {
+            var text = document.getElementById("name").value;
+            if (text == "" || text == null) {
+                alert("您并没有输入任何文字...");
+            } else {
+                alert("您输入姓名为" + text);
+            }
+        }
+
+        function rand() {
+            var randnum = 30 + Math.random() * (90 - 30);//30-90之间的随机数,公式：a + rand() * (b - a)，a到b之间的随机数
+            var quzheng = Math.floor(randnum);//取小数点之前的整数
+        }
+    </script>
 </head>
 <body>
-
+<!--姓名：<input type="text" id="name"/>-->
+<!--<input type="button" value="点击获取" onclick="getText()"/>-->
+<table border="0" cellspacing="10" width="400" height="500">
+    <tr align="center">
+        <td colspan="5"><input id="show" align="right" type="text" class="btn" value="0" readonly/></td>
+    </tr>
+    <tr align="center" style="height: 21%;">
+        <td width="20%"><input type="button" class="btn" id="btn7" onclick="setNum(7)" value="7"/></td>
+        <td width="20%"><input type="button" class="btn" id="btn8" onclick="setNum(8)" value="8"/></td>
+        <td width="20%"><input type="button" class="btn" id="btn9" onclick="setNum(9)" value="9"/></td>
+        <td width="20%"><input type="button" class="btn" id="btnchu" onclick="yunsuan(4)" value="÷"/></td>
+        <td rowspan="2"><input type="button" class="btn" id="btnc" onclick="clean()" value="C"/></td>
+    </tr>
+    <tr align="center" style="height: 21%;">
+        <td><input type="button" class="btn" id="btn4" onclick="setNum(4)" value="4"/></td>
+        <td><input type="button" class="btn" id="btn5" onclick="setNum(5)" value="5"/></td>
+        <td><input type="button" class="btn" id="btn6" onclick="setNum(6)" value="6"/></td>
+        <td><input type="button" class="btn" id="btncheng" onclick="yunsuan(3)" value="×"/></td>
+    </tr>
+    <tr align="center" style="height: 21%;">
+        <td><input type="button" class="btn" id="btn1" onclick="setNum(1)" value="1"/></td>
+        <td><input type="button" class="btn" id="btn2" onclick="setNum(2)" value="2"/></td>
+        <td><input type="button" class="btn" id="btn3" onclick="setNum(3)" value="3"/></td>
+        <td><input type="button" class="btn" id="btnm" onclick="yunsuan(2)" value="－"/></td>
+        <td rowspan="2"><input type="button" class="btn" id="btne" onclick="dengyu()" value="＝"/></td>
+    </tr>
+    <tr align="center" style="height: 21%;">
+        <td colspan="2"><input type="button" class="btn" id="btn0" onclick="setNum(0)" value="0"/></td>
+        <td><input type="button" class="btn" id="btnp" onclick="setPoint()" value="."/></td>
+        <td><input type="button" class="btn" id="btna" onclick="yunsuan(1)" value="＋"/></td>
+    </tr>
+</table>
+<div id="yunsuanfu"><label id="ope"></label></div>
 </body>
 </html>
